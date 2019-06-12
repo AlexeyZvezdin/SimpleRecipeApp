@@ -1,5 +1,8 @@
 import React from "react";
 
-const Recipe = () => <div>Recipe Comp</div>;
-
+class Recipe extends React.Component {
+  render() {
+    return <div>Recipe Comp</div>;
+  }
+}
 export default Recipe;
