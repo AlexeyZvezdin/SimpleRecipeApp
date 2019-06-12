@@ -27,8 +27,13 @@ const Recipes = props => (
                 Publisher <span>{recipe.publisher}</span>
               </p>
             </div>
-            <button class="recipe_buttons">
-              <Link to={{ pathname: `/recipe/${recipe.recipe_id}` }}>
+            <button className="recipe_buttons">
+              <Link
+                to={{
+                  pathname: `/recipe/${recipe.recipe_id}`,
+                  state: { recipe: recipe.title }
+                }}
+              >
                 View Recipe
               </Link>
             </button>
